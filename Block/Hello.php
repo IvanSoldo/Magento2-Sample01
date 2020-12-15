@@ -9,7 +9,7 @@ class Hello extends \Magento\Framework\View\Element\Template
 {
     protected $scopeConfig;
 
-    public function __construct(Template\Context $context, array $data = [], ScopeConfigInterface $scopeConfig)
+    public function __construct(Template\Context $context, ScopeConfigInterface $scopeConfig, array $data = [])
     {
         $this->scopeConfig = $scopeConfig;
         parent::__construct($context, $data);

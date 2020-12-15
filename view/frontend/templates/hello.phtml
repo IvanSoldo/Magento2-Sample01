@@ -3,7 +3,10 @@
  * @var \Inchoo\Sample01\Block\Hello $block
  */
 ?>
-<h1><?= $block->isShown() ? $block->getHelloWorld() : ''; ?></h1>
+
+<?php if ($block->isShown()) : ?>
+    <h1><?= $block->getHelloWorld() ?></h1>
+<?php endif; ?>
 
 <p>Lorem ipsum sit amet ..</p>
 
